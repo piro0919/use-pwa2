@@ -1,4 +1,4 @@
-# use-pwa
+# use-pwa2
 
 use-pwa2 is install and update handler for pwa.
 
