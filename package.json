@@ -1,15 +1,28 @@
 {
-  "name": "use-pwa2",
-  "version": "0.1.0",
-  "private": true,
+  "author": "piro <piro.haniwa@gmail.com> (https://kk-web.link/)",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/piro0919/use-pwa2/issues"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
+    "use-pwa": "1.0.1"
+  },
+  "devDependencies": {
     "@types/node": "^12.20.19",
     "@types/react": "^16.14.13",
     "@types/react-dom": "^16.9.14",
+    "gh-pages": "3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -28,28 +41,35 @@
     "workbox-strategies": "^5.1.4",
     "workbox-streams": "^5.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "homepage": "https://use-pwa2.kk-web.link",
+  "keywords": [
+    "hooks",
+    "react",
+    "pwa",
+    "usePwa",
+    "usePwa2"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "name": "use-pwa2",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piro0919/use-pwa2.git"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "build:package": "tsc -p tsconfig.gen-dts.json",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.1.0"
 }
