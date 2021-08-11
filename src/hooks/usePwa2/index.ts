@@ -5,6 +5,7 @@ export type Pwa2Data = {
   enabledInstall: boolean;
   enabledUpdate: boolean;
   installPwa: () => void;
+  isLoading: boolean;
   updatePwa: () => Promise<boolean | undefined>;
 };
 
@@ -14,6 +15,7 @@ function usePwa2(): Pwa2Data {
     canInstallprompt,
     enabledPwa,
     enabledUpdate,
+    isLoading,
     isPwa,
     showInstallPrompt,
     unregister,
@@ -30,6 +32,10 @@ function usePwa2(): Pwa2Data {
     () => showInstallPrompt,
     [showInstallPrompt]
   );
+  const isLoading2 = useMemo<Pwa2Data["isLoading"]>(
+    () => isLoading,
+    [isLoading]
+  );
   const updatePwa = useMemo<Pwa2Data["updatePwa"]>(
     () => unregister,
     [unregister]
@@ -40,6 +46,7 @@ function usePwa2(): Pwa2Data {
     installPwa,
     updatePwa,
     enabledUpdate: enabledUpdate2,
+    isLoading: isLoading2,
   };
 }
 

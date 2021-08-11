@@ -27,4 +27,5 @@ use-pwa2 is install and update handler for pwa.
 | enabledInstall | Boolean  |
 | enabledUpdate  | Boolean  |
 | installPwa     | Function |
+| isLoading      | Function |
 | updatePwa      | Function |

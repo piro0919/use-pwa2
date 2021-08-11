@@ -2,7 +2,8 @@ import React, { useCallback } from "react";
 import usePwa2 from "hooks/usePwa2";
 
 function App() {
-  const { enabledInstall, enabledUpdate, installPwa, updatePwa } = usePwa2();
+  const { enabledInstall, enabledUpdate, installPwa, isLoading, updatePwa } =
+    usePwa2();
   const handleUpdate = useCallback(async () => {
     const result = await updatePwa();
 
@@ -14,7 +15,9 @@ function App() {
     window.location.reload();
   }, [updatePwa]);
 
-  return (
+  return isLoading ? (
+    <p>Loading...</p>
+  ) : (
     <div>
       <button disabled={!enabledInstall} onClick={installPwa}>
         Install PWA
