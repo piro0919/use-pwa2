@@ -14,7 +14,7 @@ use-pwa2 is install and update handler for pwa.
 
 ## Example
 
-[Example](https://use-pwa2.kk-web.link/)
+[Example](https://use-pwa2.kkweb.io/)
 
 ## Usage
 
