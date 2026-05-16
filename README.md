@@ -1,3 +1,12 @@
+
+> ## ⚠️ Deprecated
+>
+> This package is deprecated and no longer maintained.
+>
+> Use [`use-pwa`](https://www.npmjs.com/package/use-pwa) v3+ for an actively maintained alternative.
+
+---
+
 # use-pwa2
 
 use-pwa2 is install and update handler for pwa.
