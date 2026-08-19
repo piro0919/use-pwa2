@@ -56,6 +56,7 @@
     "usePwa2"
   ],
   "license": "MIT",
+  "funding": "https://github.com/sponsors/piro0919",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "name": "use-pwa2",
