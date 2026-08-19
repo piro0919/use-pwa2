@@ -1,5 +1,5 @@
 {
-  "author": "piro <piro.haniwa@gmail.com> (https://kk-web.link/)",
+  "author": "piro0919 <piro.haniwa@gmail.com> (https://kkweb.io/)",
   "browserslist": {
     "development": [
       "last 1 chrome version",
@@ -47,7 +47,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://use-pwa2.kk-web.link",
+  "homepage": "https://use-pwa2.kkweb.io",
   "keywords": [
     "hooks",
     "react",
